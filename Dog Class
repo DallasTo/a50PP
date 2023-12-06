@@ -1,0 +1,44 @@
+public class Dog {
+    //1) instance variables
+    private String name;
+    private int age;
+    private String breed;
+    private double pounds;
+    private static int dogCount = 0;
+
+    //2) Constructors
+    public Dog(){
+        this.name = "";
+        this.age = 0;
+        this.breed = "";
+        this.pounds = 0.0;
+        dogCount++;
+    }
+    public Dog(String name, int age, String breed, double pounds){
+        this.name = name;
+        this.age = age;
+        this.breed = breed;
+        this.pounds = pounds;
+        dogCount++;
+    }
+    // Getters and setters
+    public String getName(){return name;}
+    public int getAge(){return age;}
+    public String getBreed(){return breed;}
+    public double getPounds(){return pounds;}
+    public static int getDogCount(){return dogCount;}
+
+    //Brain method
+    public double poundsToKilos(){
+        double kilos = pounds * 0.454;
+        return kilos;
+    }
+    // 3) toString
+    public String toString(){
+        String result = "The dog's name is " + name + "\n" + name + " is " + + age + " years old\n"
+                        + name + " is a " + breed + "\n" + name + " weighs " + pounds + " pounds";
+        return result;
+    }
+
+
+}
