@@ -1,0 +1,17 @@
+public class Main {
+    public static void main(String[] args) {
+    Dog Fang = new Dog ("Fang", 5, "Husky", 80.0);
+    Dog Piper = new Dog ("Piper", 3, "Australian Shepherd", 45.5);
+    Dog Alfred = new Dog ("Alfred", 10, "Dachshund", 24.0 );
+
+
+    System.out.println("Fang is a " + Fang.getBreed() + " and he's " + Fang.getAge() + " years old\n");
+    System.out.println("Piper weighs " + Piper.getPounds() + " pounds\n");
+    System.out.println(Alfred.toString() + "\n");
+    System.out.println("You have " + Dog.getDogCount() + " Dogs" );
+
+    
+
+
+    }
+}
